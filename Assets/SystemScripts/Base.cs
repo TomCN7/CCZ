@@ -7,6 +7,8 @@ public class InvertedComparer : IComparer<int>
 {
 	public int Compare(int x, int y)
 	{
+		if (y.CompareTo(x) == 0)
+	            return 1;
 		return y.CompareTo (x);
 	}
 }
