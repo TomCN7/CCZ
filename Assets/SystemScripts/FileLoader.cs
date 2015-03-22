@@ -12,6 +12,7 @@ public class FileLoader {
 
 	ArrayList m_enemylist;
 
+/*
 	void LoadXML(){
 		m_enemylist = new ArrayList();
 		XMLParser xmlparse = new XMLParser();
@@ -31,4 +32,5 @@ public class FileLoader {
 			m_enemylìst.Add(data);
 		}
 	}
+*/
 }
