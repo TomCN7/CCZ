@@ -65,7 +65,7 @@ public class Base {
 				if (x < 0 || x >= nRow) continue;
 				if (y < 0 || y >= nCol) continue;
 
-				nTempCost = nCurCost - nMapCost[temp.x, temp.y];
+				nTempCost = nCurCost - nMapCost[x, y];
 				if (nTempCost < 0) continue;
 				if (nCostIntermediate[x, y] >= 0 && nCostIntermediate[x, y] >= nTempCost) continue;
 
