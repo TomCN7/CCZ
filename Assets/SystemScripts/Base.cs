@@ -20,7 +20,7 @@ public class Base {
 	};
 
 	public bool FindPath(int nCost, int nCurX, int nCurY, int nRow, int nCol, 
-	              int [,]nMapCost, bool [,]bReachable, int [,]nFromX, int [,]nFromY/*, int [,]nCostIntermediate*/)
+	              int [,]nMapCost, bool [,]bReachable, int [,]nFromX, int [,]nFromY)
 	{
 		bool bResult = false;
 		int [,]nCostIntermediate = new int[nRow,nCol];
