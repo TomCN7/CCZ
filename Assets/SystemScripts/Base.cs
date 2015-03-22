@@ -25,7 +25,7 @@ public class Base {
 		SortedList<int, Coord> myList = new SortedList<int, Coord>(new InvertedComparer());
 
 		int []nDirX = new int[4]{-1, 0, 0, 1};
-		int []nDirY = new int[4]{0, -1, 1, 1};
+		int []nDirY = new int[4]{0, -1, 1, 0};
 
 		for (int i = 0; i < nRow; ++i)
 			for (int j = 0; j < nCol; ++j)
