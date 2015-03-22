@@ -19,7 +19,7 @@ public class Base {
 		public int x, y;
 	};
 
-	public bool FindPath(int nCost, int nCurX, int nCurY, int nRow, int nCol, 
+	static bool FindPath(int nCost, int nCurX, int nCurY, int nRow, int nCol, 
 	              int [,]nMapCost, bool [,]bReachable, int [,]nFromX, int [,]nFromY)
 	{
 		bool bResult = false;

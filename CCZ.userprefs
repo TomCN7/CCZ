@@ -1,8 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\SystemScripts\Base.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\SystemScripts\BuildAnimation.cs">
     <Files>
-      <File FileName="Assets\SystemScripts\Base.cs" Line="29" Column="1" />
+      <File FileName="Assets\SystemScripts\BuildAnimation.cs" Line="94" Column="2" />
+      <File FileName="Assets\SystemScripts\Base.cs" Line="20" Column="4" />
+      <File FileName="Assets\Scripts\PersonScript.cs" Line="8" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
