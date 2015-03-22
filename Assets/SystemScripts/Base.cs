@@ -67,7 +67,7 @@ public class Base {
 				if (nTempCost < 0) continue;
 				if (nCostIntermediate[x, y] >= 0 && nCostIntermediate[x, y] >= nTempCost) continue;
 
-				nFromX[x, y] = nCurX; nFromY[x, y] = nCurY;
+				nFromX[x, y] = temp.x; nFromY[x, y] = temp.y;
 				nCostIntermediate[x, y] = nTempCost;
 
 				Coord newItem = new Coord(); newItem.x = x; newItem.y = y;
