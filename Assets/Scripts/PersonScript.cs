@@ -10,10 +10,41 @@ public class PersonScript : MonoBehaviour {
 
 	private GameObject m_NewHerosList;
 
+//	public Base m_Base;
+
 	// Use this for initialization
 	void Start () {
 		m_transform = this.transform;
 //		m_NewHeros = Object.Instantiate (m_Heros) as GameObject;
+
+		/*
+		m_Base = new Base ();
+
+		int nCost = 5;
+		int nRow = 5, nCol = 5;
+		int [,] nMapCost = new int[5,5]{
+			{1, 2, 3, 2, 1},
+			{1, 1, 1, 1, 1},
+			{2, 2, 3, 1, 1},
+			{3, 1, 2, 1, 1},
+			{1, 1, 1, 1, 1}
+		};
+		int [,]nCostIntermediate = new int[nRow,nCol];
+		bool [,] bReachable = new bool[nRow,nCol];
+		int [,] nFromX = new int[nRow,nCol];
+		int [,] nFromY = new int[nRow,nCol];
+
+		m_Base.FindPath(nCost, 0, 0, nRow, nCol, nMapCost, bReachable, nFromX, nFromY, nCostIntermediate);
+
+		for (int i = 0; i < nRow; ++i)
+		{
+			string s = "";
+			for (int j = 0; j < nCol; ++j)
+				s += (bReachable[i,j] ? 'Y' : 'N') + "[" + nCostIntermediate[i,j] + "] " + ", (" + nFromX[i,j] + "," + nFromY[i,j] + ")\t";
+
+			Debug.Log (s);
+		}
+		*/
 	}
 
 	// Update is called once per frame

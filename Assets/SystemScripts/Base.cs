@@ -19,8 +19,8 @@ public class Base {
 		public int x, y;
 	};
 
-	bool FindPath(int nCost, int nCurX, int nCurY, int nRow, int nCol, 
-	              int [,]nMapCost, bool [,]bReachable, int [,]nFromX, int [,]nFromY)
+	public bool FindPath(int nCost, int nCurX, int nCurY, int nRow, int nCol, 
+	              int [,]nMapCost, bool [,]bReachable, int [,]nFromX, int [,]nFromY/*, int [,]nCostIntermediate*/)
 	{
 		bool bResult = false;
 		int [,]nCostIntermediate = new int[nRow,nCol];
@@ -65,7 +65,7 @@ public class Base {
 				if (x < 0 || x >= nRow) continue;
 				if (y < 0 || y >= nCol) continue;
 
-				nTempCost = nCurCost - nMapCost[x, y];
+				nTempCost = nCurCost - nMapCost[temp.x, temp.y];
 				if (nTempCost < 0) continue;
 				if (nCostIntermediate[x, y] >= 0 && nCostIntermediate[x, y] >= nTempCost) continue;
 
