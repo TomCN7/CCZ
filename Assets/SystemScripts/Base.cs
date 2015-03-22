@@ -35,9 +35,9 @@ public class Base {
 		}
 
 		if (nCurX < 0 || nCurX >= nRow)
-						goto Exit0;
+			goto Exit0;
 		if (nCurY < 0 || nCurY >= nCol)
-						goto Exit0;
+			goto Exit0;
 		if (nCost < 0)
 			goto Exit0;
 
@@ -57,10 +57,9 @@ public class Base {
 
 			bReachable[temp.x, temp.y] = true;
 			for (int i = 0; i < 4; ++i)
-				for (int j = 0; j < 4; ++j)
 			{
 				int nTempCost = 0;
-				int x = temp.x + nDirX[i], y = temp.y + nDirY[j];
+				int x = temp.x + nDirX[i], y = temp.y + nDirY[i];
 				if (x < 0 || x >= nRow) continue;
 				if (y < 0 || y >= nCol) continue;
 
