@@ -11,6 +11,7 @@ public class PersonScript : MonoBehaviour {
 	private GameObject m_NewHerosList;
 
 //	public Base m_Base;
+	public TabFileLoader m_Loader;
 
 	// Use this for initialization
 	void Start () {
@@ -45,6 +46,13 @@ public class PersonScript : MonoBehaviour {
 			Debug.Log (s);
 		}
 		*/
+
+		m_Loader = new TabFileLoader ();
+
+		if (m_Loader.LoadTabFile("D:\\thomaslab\\Unity\\test.tab"))
+		{
+			Debug.Log (m_Loader["3", "col2"]);
+		}
 	}
 
 	// Update is called once per frame
